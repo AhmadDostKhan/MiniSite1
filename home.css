@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(234, 234, 234);
+}
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  z-index: 1;
+  background-color: white;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30%;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+
+  text-wrap: nowrap;
+  font-family: the font;
+  color: rgb(55, 55, 55);
+}
+.logo {
+  font-family: attack;
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(81, 81, 81);
+}
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+}
+.Home-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+}
+.Home-Image {
+  background-color: rgba(255, 0, 0, 0);
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Home-Image img {
+  width: 100%;
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.647));
+}
+.Home-info h3 {
+  font-size: 4.5vw;
+  width: 100%;
+  line-height: 90%;
+  font-family: the font;
+}
+.Home-info p {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+  font-size: 0.9rem;
+  color: rgb(42, 42, 42);
+}
+.Home-info button {
+  width: 300px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.02);
+    color: rgb(255, 149, 0);
+  }
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.footer {
+  display: flex;
+  margin-top: 40px;
+  gap: 50px;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(88, 88, 88);
+}
+.footer h3 {
+  font-size: 20px;
+  color: rgb(71, 71, 71);
+}
+.footer p {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(126, 126, 126);
+  text-wrap: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .home-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Home-info h3 {
+    font-size: 40px;
+  }
+  .Home-info {
+    width: 100%;
+  }
+  .Home-info p {
+    width: 100%;
+  }
+  .Home-Image {
+    width: 100%;
+    padding: 0;
+  }
+  .footer {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .footer h3,
+  .footer p {
+    font-size: 10px;
+  }
+}
